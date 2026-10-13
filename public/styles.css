@@ -2,3 +2,55 @@
 @media(max-width:900px){.hero{padding:58px 30px;gap:35px;min-height:520px}.hero-copy{padding-left:0}h1{font-size:55px}.checker{padding-left:30px;padding-right:30px}.how{padding:65px 30px;gap:45px}.art-note{right:-10px}.topbar{padding:0 30px}}
 @media(max-width:650px){.topbar{height:65px;padding:0 19px}.topbar nav{gap:0}.topbar nav>a:not(.nav-cta){display:none}.topbar .nav-cta{padding:10px 12px;font-size:11px}.hero{display:flex;flex-direction:column;align-items:stretch;padding:53px 22px 68px;gap:35px}.hero-copy{padding:0}h1{font-size:49px;margin-top:20px}.hero-lede{font-size:14px}.hero-art{min-height:275px;padding:0 12px}.art-card{max-width:360px}.landscape{height:210px}.art-note{right:-4px;bottom:-4px;font-size:14px}.checker{padding:50px 22px 57px}.section-title h2{font-size:34px}.checker-layout{grid-template-columns:1fr;gap:23px}.dropzone{min-height:158px;padding:17px}.analyze{max-width:none}.privacy-card{padding:19px}.how{display:block;padding:62px 23px}.how-intro{margin-bottom:32px}.how-intro h2{font-size:38px}.steps article{grid-template-columns:37px 1fr}footer{padding:23px;display:grid;grid-template-columns:1fr auto;gap:13px}footer small{grid-column:1/-1;text-align:left;margin:0}footer p{grid-column:1/-1;grid-row:2}.scores{flex-direction:column}.scores>div{min-width:0}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+.scan-mode{margin:17px 0 0;padding:13px;border:1px solid #e4e7e0;background:#fbfbf9}.scan-mode legend{padding:0 5px;font-size:10px;font-weight:700;color:#53665a}.scan-mode label{display:flex;gap:9px;align-items:flex-start;padding:8px 0;cursor:pointer}.scan-mode label+label{border-top:1px solid #e7e9e3}.scan-mode input{margin:2px 0 0;accent-color:#607d6c}.scan-mode b,.scan-mode small{display:block}.scan-mode b{font-size:11px;color:#394b40}.scan-mode small{font-size:9px;line-height:1.55;color:#707b74;margin-top:3px}.privacy-warning a{display:inline-block;margin-top:7px;text-decoration:underline;text-underline-offset:2px;color:#725e3f}.privacy-card{line-height:1.7}.privacy-card p{font-size:10px}
+
+
+/* ── Certificate CTA Section (homepage) ─────────────────────────────────── */
+.cert-cta-section{background:linear-gradient(160deg,#edf2ea 0%,#f5f3ec 60%,#eff3ee 100%);border-top:1px solid #dce6d8;border-bottom:1px solid #dce6d8;padding:90px max(calc((100vw - 1092px)/2),32px)}
+.cert-cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.cert-cta-copy .eyebrow{color:#5a8060}
+.cert-cta-copy h2{font-size:48px;line-height:1.02;margin:18px 0 18px;letter-spacing:-1.4px}
+.cert-cta-copy h2 em{color:#748e7f;font-style:normal}
+.cert-cta-copy>p{font-size:14px;line-height:1.75;color:#5b686e;max-width:440px;margin:0 0 30px}
+.cert-cta-steps{display:flex;flex-direction:column;gap:0;margin-bottom:32px}
+.cert-cta-step{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid #d5e2d0;align-items:start}
+.cert-cta-step:last-child{border-bottom:none}
+.cert-step-num{font-size:9px;letter-spacing:1.2px;color:#8eaa96;font-weight:700;padding-top:3px}
+.cert-cta-step b{display:block;font-size:13px;font-weight:600;color:#223047;margin-bottom:3px}
+.cert-cta-step p{font-size:11px;line-height:1.65;color:#6b7872;margin:0}
+.cert-cta-step p em{color:#748e7f;font-style:normal;font-weight:600}
+.cert-cta-btn{font-size:13px;padding:15px 22px;gap:18px}
+.cert-cta-note{display:flex;align-items:center;gap:7px;font-size:10px;color:#879087;margin:14px 0 0}
+.cert-cta-note span{font-size:16px}
+.cert-cta-preview{display:flex;flex-direction:column;align-items:center;gap:18px}
+.cert-mock{position:relative;width:100%;max-width:400px}
+.cert-mock-shadow{position:absolute;inset:12px -8px -12px 8px;background:#c8d8cc;border:1px solid #b8ccbc;z-index:0;border-radius:2px}
+.cert-mock-border{position:relative;z-index:1;background:#f8f7f3;border:2px solid #8eaa96;padding:5px;border-radius:2px;box-shadow:0 6px 30px #27354b14}
+.cert-mock-inner{border:1px solid #c8d8cc;padding:26px 24px 22px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.cert-mock-brand{font-size:13px;font-weight:700;color:#748e7f;letter-spacing:-.3px}
+.cert-mock-rule{width:80%;height:1px;background:#c8d8cc;margin:2px 0 4px}
+.cert-mock-eyebrow{font-size:7px;letter-spacing:1.8px;color:#8eaa96;font-weight:700}
+.cert-mock-title{font-family:var(--serif);font-size:20px;font-weight:500;color:#223047;line-height:1.2;margin:4px 0}
+.cert-mock-title span{display:block;font-size:14px;color:#4d6657}
+.cert-mock-divider{width:55%;height:1px;background:#dce6d8;margin:4px 0}
+.cert-mock-certifies{font-size:10px;color:#7a8880;font-family:var(--serif);font-style:italic}
+.cert-mock-name{font-family:var(--serif);font-size:22px;font-weight:600;color:#304b3b;margin:2px 0}
+.cert-mock-name-line{width:65%;height:1.5px;background:#748e7f;margin-bottom:6px}
+.cert-mock-body{font-size:9px;color:#7a8880;line-height:1.6;max-width:290px}
+.cert-mock-badge{background:#eaf0ea;color:#304b3b;font-size:9px;font-weight:700;padding:5px 12px;border-radius:20px;margin-top:6px}
+.cert-mock-date{font-size:8px;color:#9aaa9d;margin-top:2px}
+.cert-cta-badge-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.cert-badge-pill{background:#fff;border:1px solid #c8d8cc;color:#5a7062;font-size:10px;font-weight:600;padding:6px 12px;border-radius:20px}
+@media(max-width:900px){.cert-cta-inner{grid-template-columns:1fr;gap:40px}.cert-cta-copy h2{font-size:40px}.cert-mock{max-width:360px}}
+@media(max-width:650px){.cert-cta-section{padding:60px 22px}.cert-cta-copy h2{font-size:34px}.cert-cta-btn{width:100%;justify-content:center}.cert-mock{max-width:100%}}
+
+/* Homepage primary actions */
+.home-hero-actions{display:flex;align-items:stretch;gap:12px}
+.home-hero-actions .button-primary{flex-shrink:0}
+.certificate-button{background:#e7eee8;color:var(--ink);border:1px solid #cbd8ce;line-height:1.5;gap:12px}
+.certificate-button:hover{background:#dce7de}
+.home-hero-actions .button:focus-visible{outline:3px solid var(--sage);outline-offset:4px}
+@media(max-width:420px){.home-hero-actions{flex-direction:column}.home-hero-actions .button{width:100%}}
+
+.detection-evidence ul{padding-left:20px}.detection-evidence li{margin:14px 0}.detection-evidence li p{margin:5px 0;line-height:1.6;overflow-wrap:anywhere}.result .caveat{overflow-wrap:anywhere}

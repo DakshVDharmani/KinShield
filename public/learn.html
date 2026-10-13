@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#f8f7f3"/><meta name="description" content="A practical, calm guide for parents navigating deepfakes, AI and children's online safety."/>
+  <title>Learning Centre — KinShield</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/styles.css"/><link rel="stylesheet" href="/learning.css"/><script src="/learning.js" defer></script>
+</head>
+<body class="learning-page" id="top">
+  <header class="topbar"><a class="brand" href="/" aria-label="KinShield home"><span class="brand-mark">✳</span> kinshield</a><nav aria-label="Main navigation"><a href="#roadmap">Explore topics</a><a href="#action">Get help now</a><a class="nav-cta" href="/">Check a video <span>↗</span></a></nav></header>
+  <main>
+    <section class="learn-hero"><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> THE KINSHIELD LEARNING CENTRE</div><h1>The internet is changing.<br/>Your child's safety<br/><em>still starts with trust.</em></h1><p class="hero-lede">Understand deepfakes, AI and online pressure in plain language. Leave with steady, practical ways to help your child feel safe asking for help.</p><div class="hero-actions"><a class="button button-primary" href="#roadmap">Start learning <span>↓</span></a><a class="text-action" href="#action">I'm worried right now <span>↗</span></a></div><div class="hero-meta"><span>↗ Choose any topic</span><span>◷ Short, practical lessons</span><span>⌑ No account or child data</span></div></div>
+      <aside class="trust-card" aria-label="The KinShield family trust loop"><div class="trust-card-head"><span>THE KINSHIELD FAMILY TRUST LOOP</span><span>01 — 03</span></div><div class="trust-orbit"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-core">A safe<br/>way back</div><span class="orbit-node node-one">Pause</span><span class="orbit-node node-two">Check</span><span class="orbit-node node-three">Talk</span></div><p>Build a small family habit that works even when a message feels urgent.</p><div class="trust-card-foot"><span>CALM FIRST</span><span class="line"></span><span>THEN VERIFY</span></div></aside>
+    </section>
+    <section class="urgent-strip" id="action"><div><span class="eyebrow">NEED A NEXT STEP?</span><h2>Start with what happened.</h2><p>You do not need to know whether something is AI-made to respond to a threat or support your child.</p></div><a class="button button-primary" href="#decision">Open the quick guide <span>↓</span></a></section>
+    <section class="learning-shell" id="roadmap">
+      <aside class="learn-sidebar">
+        <div class="side-label">YOUR LEARNING MAP</div>
+        <div class="progress-label"><span>Lessons explored</span><b id="progress-count">0 of 7</b></div>
+        <div class="progress-track" role="progressbar" aria-label="Lessons explored" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0"><span id="progress-fill"></span></div>
+        <p class="privacy-note">Progress stays in this browser only. No account, no child details.</p>
+        <label class="search-label" for="topic-search">Find a topic</label>
+        <input id="topic-search" type="search" placeholder="Try "voice" or "report""/>
+        <nav class="lesson-nav" aria-label="Learning topics">
+          <a href="#basics">01 <span>Could that video be fake?</span></a>
+          <a href="#targeting">02 <span>How could a child be targeted?</span></a>
+          <a href="#signals">03 <span>What should I look for?</span></a>
+          <a href="#impact">04 <span>How do I respond to a disclosure?</span></a>
+          <a href="#decision">05 <span>What do I do right now?</span></a>
+          <a href="#detector">06 <span>What can a detector tell me?</span></a>
+          <a href="#family">07 <span>How do we build AI literacy?</span></a>
+        </nav>
+
+        <div class="sidebar-quiz-block" id="sidebar-quiz-score" hidden>
+          <div class="side-label" style="margin-top:18px">QUIZ PROGRESS</div>
+          <div class="progress-label"><span>Answered</span><b id="quiz-answered-count">0 of 21</b></div>
+          <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="21" aria-valuenow="0"><span id="quiz-progress-fill" style="background:#748e7f"></span></div>
+          <div class="progress-label" style="margin-top:7px"><span>Score</span><b id="quiz-score-display">—</b></div>
+        </div>
+
+        <a class="sidebar-urgent" href="#decision">Urgent help guide <span>↗</span></a>
+      </aside>
+      <div class="lesson-content">
+        <div class="content-top"><div><div class="eyebrow">A FLEXIBLE GUIDE FOR FAMILIES</div><h2>Start with the question<br/>on your mind.</h2></div><span class="reading-time">7 short lessons · about 25 min</span></div>
+        <div class="topic-cards" id="topic-cards">
+          <a href="#basics" class="topic-card" data-search="video fake deepfake voice image audio basics"><span class="topic-num">01 / 4 min</span><b>Could that video be fake?</b><span>Learn what synthetic media is and why eyes alone cannot settle it.</span><i>Explore lesson ↗</i></a>
+          <a href="#targeting" class="topic-card" data-search="target scam bullying impersonation sextortion threats fake profile child"><span class="topic-num">02 / 4 min</span><b>How could a child be targeted?</b><span>Recognize familiar online pressures, with or without AI.</span><i>Explore lesson ↗</i></a>
+          <a href="#signals" class="topic-card" data-search="warning suspicious message voice verification fake news"><span class="topic-num">03 / 3 min</span><b>What deserves a second look?</b><span>Use context and a separate channel instead of hunting for visual glitches.</span><i>Explore lesson ↗</i></a>
+          <a href="#impact" class="topic-card" data-search="emotional disclosure conversation teen younger child support shame"><span class="topic-num">04 / 4 min</span><b>What if my child tells me?</b><span>Respond in a way that keeps the door open and blame out.</span><i>Explore lesson ↗</i></a>
+          <a href="#decision" class="topic-card" data-search="urgent report exploit money blackmail image evidence police safety"><span class="topic-num">05 / 5 min</span><b>What do I do right now?</b><span>Choose a situation and get a practical first-response checklist.</span><i>Open quick guide ↗</i></a>
+          <a href="#detector" class="topic-card" data-search="checker detector score results false positive false negative provenance"><span class="topic-num">06 / 3 min</span><b>Can a detector tell me?</b><span>Understand what KinShield checks and where its result stops.</span><i>Read the explainer ↗</i></a>
+          <a href="#family" class="topic-card" data-search="family conversation ages privacy consent checklist child teen AI literacy"><span class="topic-num">07 / 4 min</span><b>How do we talk about AI?</b><span>Age-aware prompts to build judgment without constant suspicion.</span><i>Explore lesson ↗</i></a>
+        </div>
+        <p class="search-empty" id="search-empty" hidden>No topics match that search. Try a word like "voice", "report" or "family".</p>
+
+        <!-- LESSON 01 -->
+        <section class="lesson-section" id="basics" data-lesson="basics"><div class="lesson-heading"><span>01 · THE BASICS</span><span>4 MIN</span></div><h2>Could that video be fake?</h2><p class="lesson-summary">A deepfake is media made or changed with AI to imitate a person or event. The word is often used loosely; the important question is what the media claims and where it came from.</p>
+          <div class="definition-grid"><article><h3>Made</h3><p>A model generates a new image, voice, video, or text from learned patterns. It does not retrieve a hidden recording of the event.</p></article><article><h3>Changed</h3><p>A real recording may be edited, face-swapped, dubbed, or lip-synced. A fabricated screenshot can also pair real words with a false context.</p></article><article><h3>Misleadingly shared</h3><p>Authentic footage can be cropped, old, or captioned to imply something that did not happen. A real clip can still tell a false story.</p></article></div>
+          <div class="concept-diagram" role="img" aria-label="A plain-language diagram: a prompt and source material go into a generative system, which produces a new or edited media file that still needs context and verification."><div><small>INPUT</small><b>Prompt or source media</b></div><span aria-hidden="true">→</span><div class="diagram-engine"><small>PATTERN LEARNING</small><b>Generative system</b></div><span aria-hidden="true">→</span><div><small>OUTPUT</small><b>New or edited media</b></div><span aria-hidden="true">→</span><div class="diagram-check"><small>OUR PART</small><b>Context + verification</b></div></div>
+          <p class="diagram-caption">This describes the idea, not instructions for making a deceptive recording. Voice cloning imitates sound; face swapping changes whose face appears; lip synchronization adjusts mouth movement to another audio track.</p>
+          <div class="lesson-callout"><b>Try this thought experiment</b><p>A class group shares a video of a teacher announcing a cancelled exam. Before judging the face or voice, ask: who posted it first, is the school sharing it elsewhere, and can you check through a known school contact?</p></div>
+          <h3 class="subhead">A small authenticity check</h3><div class="quiz-card" id="quiz"><p class="quiz-count">A QUICK PRACTICE · FICTIONAL SCENARIO</p><h3>A familiar voice message says, "I lost my phone—send the gift card codes now." What is the safest first move?</h3><div class="quiz-options"><button data-answer="wrong">Listen again for a robotic-sounding voice.</button><button data-answer="right">Pause and call the person using a number you already know.</button><button data-answer="wrong">Forward it to the family group so others can decide.</button></div><p class="quiz-feedback" id="quiz-feedback" role="status" hidden></p></div>
+          <details class="misconception"><summary>Common misconception: "A strange blink or hand proves a fake."</summary><p>There is no universal visual tell. Compression, lighting, motion blur, and editing can create odd artifacts in authentic media too. A polished fake may show none. Treat visual clues as a reason to check context, never as proof.</p></details>
+
+          <!-- Quiz block: lesson 01 -->
+          <div class="section-quiz" id="sq-basics" data-section="basics">
+            <div class="sq-header"><span class="sq-eyebrow">CHECK YOUR UNDERSTANDING · LESSON 01</span></div>
+            <div class="sq-question" data-q="0">
+              <p class="sq-qtext">What does the term "deepfake" most accurately describe?</p>
+              <div class="sq-options">
+                <button data-correct="false">A video recorded secretly without consent.</button>
+                <button data-correct="true">Media that has been made or altered with AI to imitate a person or event.</button>
+                <button data-correct="false">Any video posted online without a verified source.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="1">
+              <p class="sq-qtext">Authentic footage shared with a misleading caption is best described as:</p>
+              <div class="sq-options">
+                <button data-correct="false">A harmless repost, since the video itself is real.</button>
+                <button data-correct="false">A deepfake, because it deceives viewers.</button>
+                <button data-correct="true">Misleadingly shared media — real footage that still tells a false story.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="2">
+              <p class="sq-qtext">When you spot a strange blinking pattern in a video, the best response is to:</p>
+              <div class="sq-options">
+                <button data-correct="false">Declare it a deepfake and warn everyone immediately.</button>
+                <button data-correct="true">Treat it as a reason to verify context through a trusted source, not proof of a fake.</button>
+                <button data-correct="false">Ignore it — visual glitches are always caused by compression.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-score-row" hidden><span class="sq-score-label">Section score:</span><b class="sq-score-val"></b></div>
+          </div>
+
+          <details class="sources"><summary>Sources and further reading for this lesson</summary><ul><li><a href="https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content" target="_blank" rel="noreferrer">NIST, Reducing Risks Posed by Synthetic Content (2024)</a> — overview of detection, provenance, labeling, and safeguards.</li><li><a href="https://www.unicef.org/innocenti/reports/policy-guidance-ai-children" target="_blank" rel="noreferrer">UNICEF, Guidance on AI and Children, version 3 (2025)</a> — child rights, safety, privacy, and AI companions.</li></ul></details><a class="related-link" href="#signals">Next: check the context, not just the pixels →</a></section>
+
+        <!-- LESSON 02 -->
+        <section class="lesson-section" id="targeting" data-lesson="targeting"><div class="lesson-heading"><span>02 · HOW PRESSURE WORKS</span><span>4 MIN</span></div><h2>How could a child be targeted?</h2><p class="lesson-summary">AI can make impersonation and fabrication easier. Many underlying harms—bullying, grooming, scams, coercion, and privacy violations—also happen without AI.</p><div class="risk-list"><article><span>01</span><div><h3>Borrowed identity</h3><p>A copied voice or familiar profile asks for money, a login code, secrecy, or an urgent favour. Urgency is a cue to verify separately.</p></div></article><article><span>02</span><div><h3>Fabricated "proof"</h3><p>An edited image, fake screenshot, or misleading clip is circulated to embarrass or isolate someone. A screenshot can be fabricated; it does not establish a conversation happened.</p></div></article><article><span>03</span><div><h3>Threats and sexual exploitation</h3><p>Someone may claim to have an intimate image, demand money or more images, or threaten to share manipulated material. The child is not at fault, whether the material is real, edited, or invented.</p></div></article><article><span>04</span><div><h3>False relationships and misinformation</h3><p>Fake profiles, synthetic identities, deceptive influencer endorsements, fabricated news, and companion bots can blur who is speaking and what is reliable.</p></div></article></div><div class="lesson-callout"><b>What not to assume</b><p>A child going quiet, changing apps, or becoming upset is not proof of exploitation. Ask gently and privately. Focus on what they experienced and whether they feel safe.</p></div>
+
+          <!-- Quiz block: lesson 02 -->
+          <div class="section-quiz" id="sq-targeting" data-section="targeting">
+            <div class="sq-header"><span class="sq-eyebrow">CHECK YOUR UNDERSTANDING · LESSON 02</span></div>
+            <div class="sq-question" data-q="0">
+              <p class="sq-qtext">A friend's account sends your child an urgent message asking for a gift card code. The safest first step is:</p>
+              <div class="sq-options">
+                <button data-correct="false">Send the code — it could be a real emergency.</button>
+                <button data-correct="true">Pause and contact the real friend through a saved, separate channel to verify.</button>
+                <button data-correct="false">Ask in the same chat whether it's really them.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="1">
+              <p class="sq-qtext">Which of the following is true about fabricated "proof" screenshots?</p>
+              <div class="sq-options">
+                <button data-correct="true">A screenshot can be fabricated and does not prove a conversation happened.</button>
+                <button data-correct="false">Screenshots are always reliable because they capture what's on-screen in real time.</button>
+                <button data-correct="false">Only screenshots from certain apps can be faked.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="2">
+              <p class="sq-qtext">If a child becomes withdrawn and changes apps suddenly, a parent should:</p>
+              <div class="sq-options">
+                <button data-correct="false">Immediately take away all devices as a precaution.</button>
+                <button data-correct="false">Assume exploitation is happening and confront the suspected person.</button>
+                <button data-correct="true">Ask gently and privately, focusing on whether they feel safe, not assuming the cause.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-score-row" hidden><span class="sq-score-label">Section score:</span><b class="sq-score-val"></b></div>
+          </div>
+
+          <details class="sources"><summary>Sources and further reading</summary><ul><li><a href="https://www.iwf.org.uk/resources/ai-child-abuse-imagery-parent-guide" target="_blank" rel="noreferrer">Internet Watch Foundation, AI Child Sexual Abuse Imagery: Parent Safety Guide</a> — practical advice for parents.</li><li><a href="https://www.unicef.org/innocenti/reports/policy-guidance-ai-children" target="_blank" rel="noreferrer">UNICEF, Guidance on AI and Children (2025)</a> — discusses AI companions, privacy, and sexual abuse imagery.</li></ul></details></section>
+
+        <!-- LESSON 03 -->
+        <section class="lesson-section" id="signals" data-lesson="signals"><div class="lesson-heading"><span>03 · PAUSE AND VERIFY</span><span>3 MIN</span></div><h2>What deserves a second look?</h2><p class="lesson-summary">No single sign proves a message is fake. Look for a mismatch between the request, the sender, and what you can confirm independently.</p><div class="signal-grid"><div><b>Suspicious request</b><p>Unexpected urgency, secrecy, money, passwords, or a verification code.</p></div><div><b>Unfamiliar route</b><p>A "known" person asks from a new account, number, or channel.</p></div><div><b>Missing context</b><p>No original source, date, location, or independent confirmation.</p></div><div><b>Pressure to spread</b><p>"Share now," "don't tell anyone," or threats if a child asks for help.</p></div></div><div class="pause-framework"><span>PAUSE</span><i>→</i><span>VERIFY</span><i>→</i><span>SUPPORT</span><i>→</i><span>REPORT</span></div><p class="fine-print">Call a trusted person using a number already saved. Find the original publisher. Do not forward unverified content. For abusive material involving a child, preserve non-content details such as usernames, URLs, timestamps, and report IDs when safe and lawful; do not download or redistribute the image.</p>
+
+          <!-- Quiz block: lesson 03 -->
+          <div class="section-quiz" id="sq-signals" data-section="signals">
+            <div class="sq-header"><span class="sq-eyebrow">CHECK YOUR UNDERSTANDING · LESSON 03</span></div>
+            <div class="sq-question" data-q="0">
+              <p class="sq-qtext">Which combination of signals most strongly warrants a second look at a message?</p>
+              <div class="sq-options">
+                <button data-correct="false">A long message from a family member on their usual account.</button>
+                <button data-correct="true">An urgent request for secrecy and money from a "known" person on a new account.</button>
+                <button data-correct="false">A video shared publicly with a verifiable original source and date.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="1">
+              <p class="sq-qtext">When you receive unverified content involving a child, you should:</p>
+              <div class="sq-options">
+                <button data-correct="false">Forward it to others so more people can judge whether it's real.</button>
+                <button data-correct="true">Not forward it; find the original source and report through the platform if it's abusive.</button>
+                <button data-correct="false">Download it as evidence before doing anything else.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="2">
+              <p class="sq-qtext">The PAUSE → VERIFY → SUPPORT → REPORT framework means:</p>
+              <div class="sq-options">
+                <button data-correct="false">Stop all contact, hire a lawyer, call the police, then comfort the child.</button>
+                <button data-correct="false">Pause the child's internet access, verify their accounts, support your platform complaint, then report to school.</button>
+                <button data-correct="true">Stop before acting, confirm through a known channel, help the affected person, then report through the right channel.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-score-row" hidden><span class="sq-score-label">Section score:</span><b class="sq-score-val"></b></div>
+          </div>
+
+          <details class="sources"><summary>Sources and further reading</summary><ul><li><a href="https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content" target="_blank" rel="noreferrer">NIST (2024), synthetic content transparency approaches</a>.</li><li><a href="https://www.unesco.org/en/articles/deepfakes-and-crisis-knowing" target="_blank" rel="noreferrer">UNESCO, Deepfakes and the crisis of knowing</a> — media literacy and shared sense-making.</li></ul></details></section>
+
+        <!-- LESSON 04 -->
+        <section class="lesson-section" id="impact" data-lesson="impact"><div class="lesson-heading"><span>04 · THE HUMAN RESPONSE</span><span>4 MIN</span></div><h2>What if my child tells me?</h2><p class="lesson-summary">A child may worry about friendships, reputation, privacy, or being blamed. The first response can make it easier—or harder—to ask for help again.</p><div class="response-steps"><div><span>01</span><p><b>Listen without blame.</b> "I'm glad you told me. This isn't your fault."</p></div><div><span>02</span><p><b>Check immediate safety.</b> Ask if anyone is in immediate danger or demanding something now.</p></div><div><span>03</span><p><b>Keep the circle small.</b> Avoid interrogating, publicly confronting, or threatening to take away every device as an immediate punishment.</p></div><div><span>04</span><p><b>Get support together.</b> Agree on a trusted adult, school safeguarding contact, platform report, or local authority as appropriate.</p></div></div><div class="conversation-tool"><div><div class="eyebrow">PRACTISE A FIRST SENTENCE</div><h3>Choose an age band</h3></div><div class="age-tabs" role="group" aria-label="Choose age band"><button class="active" data-age="young">5–8</button><button data-age="middle">9–12</button><button data-age="teen">13–17</button></div><blockquote id="conversation-line">"You can always tell me if something online feels confusing. We'll work it out together."</blockquote><p id="conversation-prompt">Try: ask one calm, open question such as "What happened next?" and give them time.</p></div>
+
+          <!-- Quiz block: lesson 04 -->
+          <div class="section-quiz" id="sq-impact" data-section="impact">
+            <div class="sq-header"><span class="sq-eyebrow">CHECK YOUR UNDERSTANDING · LESSON 04</span></div>
+            <div class="sq-question" data-q="0">
+              <p class="sq-qtext">Which opening response is most likely to keep a child's trust when they disclose something upsetting?</p>
+              <div class="sq-options">
+                <button data-correct="false">"Why didn't you tell me sooner? This is very serious."</button>
+                <button data-correct="true">"I'm glad you told me. This isn't your fault."</button>
+                <button data-correct="false">"Who else knows about this? I need to talk to their parents."</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="1">
+              <p class="sq-qtext">What should you check first after a child discloses something distressing?</p>
+              <div class="sq-options">
+                <button data-correct="true">Whether anyone is in immediate danger or something is being demanded right now.</button>
+                <button data-correct="false">The child's browser history and message logs.</button>
+                <button data-correct="false">Whether the story is consistent with what other children say.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="2">
+              <p class="sq-qtext">"Keeping the circle small" after a disclosure means:</p>
+              <div class="sq-options">
+                <button data-correct="false">Only telling one other person the secret to protect privacy.</button>
+                <button data-correct="false">Keeping the child away from all social media indefinitely.</button>
+                <button data-correct="true">Avoiding public confrontation or interrogation, and limiting who is told until a safe plan is agreed.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-score-row" hidden><span class="sq-score-label">Section score:</span><b class="sq-score-val"></b></div>
+          </div>
+
+          <details class="sources"><summary>Sources and further reading</summary><ul><li><a href="https://www.iwf.org.uk/resources/ai-child-abuse-imagery-parent-guide" target="_blank" rel="noreferrer">IWF parent guide</a> — supportive response and reporting guidance.</li><li><a href="https://www.unicef.org/innocenti/reports/policy-guidance-ai-children" target="_blank" rel="noreferrer">UNICEF guidance on AI and children (2025)</a>.</li></ul></details></section>
+
+        <!-- LESSON 05 -->
+        <section class="lesson-section decision-section" id="decision" data-lesson="decision"><div class="lesson-heading"><span>05 · THE PRACTICAL PLAYBOOK</span><span>5 MIN</span></div><h2>What do I do right now?</h2><p class="lesson-summary">Choose the closest situation. This guide is general information; local services and reporting routes vary. If someone faces immediate physical danger, contact local emergency services now.</p><div class="decision-layout"><div class="decision-options" role="group" aria-label="Choose what happened"><button class="active" data-scenario="message">Suspicious voice or message</button><button data-scenario="impersonation">Someone impersonated a trusted person</button><button data-scenario="bullying">A fake image or video is spreading</button><button data-scenario="threat">My child is being threatened or bullied</button><button data-scenario="extortion">Someone demands money or more images</button><button data-scenario="exploitation">I suspect sexual exploitation</button><button data-scenario="unsure">I am unsure if it is authentic</button></div><div class="decision-answer" aria-live="polite"><span class="eyebrow" id="scenario-label">FIRST RESPONSE</span><h3 id="scenario-title">A suspicious voice or message</h3><ol id="scenario-steps"><li>Do not pay, share a code, or click a link in the message.</li><li>Contact the person through a number or channel you already trust.</li><li>If a child is involved, tell them you will check together and they are not in trouble.</li></ol><p id="scenario-note">If money was sent, contact your bank promptly and use your country's official cybercrime reporting route.</p></div></div>
+          <div class="region-resources"><div><span class="eyebrow">REPORTING ROUTES · CHECK YOUR REGION</span><h3>Find an official place to start</h3><p>Choose services that match where your family lives. For suspected exploitation, avoid uploading or sending the image to KinShield or to friends.</p></div><div class="resource-links"><a href="https://cybercrime.gov.in/" target="_blank" rel="noreferrer"><b>India</b><span>National Cyber Crime Reporting Portal — includes online child sexual abuse material complaints.</span><i>Official portal ↗</i></a><a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" rel="noreferrer"><b>United States</b><span>NCMEC CyberTipline for suspected online child exploitation.</span><i>Report ↗</i></a><a href="https://reportharmfulcontent.com/" target="_blank" rel="noreferrer"><b>United Kingdom</b><span>Report Harmful Content for online harm; immediate danger should go to emergency services.</span><i>Get support ↗</i></a></div></div>
+          <div class="sensitive-note"><b>If sexual exploitation may be involved</b><p>Do not ask your child to resend or show intimate imagery. Do not download, screenshot, copy, or forward it. If safe and lawful, keep non-content details: account names, profile links, URLs, timestamps, and platform report numbers. Report through the platform and a relevant child protection or law enforcement service. If there is immediate danger, use local emergency services.</p><p class="region-extra"><a href="https://takeitdown.ncmec.org/" target="_blank" rel="noreferrer">US: NCMEC Take It Down</a> helps young people limit the online sharing of certain intimate images using an on-device hash; it does not require uploading the image. <a href="https://www.iwf.org.uk/report/" target="_blank" rel="noreferrer">UK: IWF reporting portal</a> accepts URLs, not image uploads.</p></div>
+          <button class="copy-checklist" id="copy-checklist" type="button">Copy my first steps</button><span class="copy-status" id="copy-status" role="status"></span>
+
+          <!-- Quiz block: lesson 05 -->
+          <div class="section-quiz" id="sq-decision" data-section="decision">
+            <div class="sq-header"><span class="sq-eyebrow">CHECK YOUR UNDERSTANDING · LESSON 05</span></div>
+            <div class="sq-question" data-q="0">
+              <p class="sq-qtext">Someone has sent a message demanding money and claiming to have an intimate image of your child. You should:</p>
+              <div class="sq-options">
+                <button data-correct="false">Pay once to make the threat go away, then report.</button>
+                <button data-correct="true">Not pay, keep the child calm, preserve account details, and report to child protection services.</button>
+                <button data-correct="false">Download the image as evidence before contacting anyone.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="1">
+              <p class="sq-qtext">If money was sent after a scam voice message, what should you do immediately?</p>
+              <div class="sq-options">
+                <button data-correct="false">Wait 24 hours to see if it was a misunderstanding.</button>
+                <button data-correct="true">Contact your bank promptly and use your country's official cybercrime reporting route.</button>
+                <button data-correct="false">Post a warning in your family group chat about the scam.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="2">
+              <p class="sq-qtext">In cases of suspected sexual exploitation, which details should you preserve if safe and lawful?</p>
+              <div class="sq-options">
+                <button data-correct="false">Screenshots and copies of the intimate imagery for law enforcement.</button>
+                <button data-correct="false">A list of everyone who may have received the image.</button>
+                <button data-correct="true">Non-content details: account names, profile links, URLs, timestamps, and report IDs.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-score-row" hidden><span class="sq-score-label">Section score:</span><b class="sq-score-val"></b></div>
+          </div>
+        </section>
+
+        <!-- LESSON 06 -->
+        <section class="lesson-section" id="detector" data-lesson="detector"><div class="lesson-heading"><span>06 · KNOW THE LIMITS</span><span>3 MIN</span></div><h2>What can KinShield's video check tell me?</h2><p class="lesson-summary">With your consent, KinShield sends the video to FauxLens and displays its verdict, confidence, and supporting evidence. Confidence is not a calibrated probability that a video is fake. The service does not establish who made the video or why.</p><div class="result-explainer"><div class="result-tabs" role="group" aria-label="Example detector result"><button class="active" data-result="signals">Signals detected</button><button data-result="none">No strong signals</button><button data-result="unclear">Inconclusive</button></div><div class="result-state" aria-live="polite"><div class="example-stamp">ILLUSTRATIVE EXAMPLE · NOT A LIVE RESULT</div><h3 id="result-title">Some sampled frames received higher scores</h3><p id="result-copy">This is a prompt to check the source and context. It is not proof the whole video is fake or that someone acted maliciously.</p><b id="result-next">Next: verify with the original speaker through a known channel.</b></div></div><div class="result-limits"><p><b>False positive:</b> an authentic clip gets flagged. <b>False negative:</b> a manipulated clip gets a low score. Compression, cropping, lighting, edits, and generation methods can affect results. Different tools may disagree.</p><p><b>Provenance</b> is information about where a file came from and how it changed. Some media carries signed history; many files do not. Missing provenance alone does not mean a file is fake. Detection cannot establish intent or truth.</p></div><a class="button button-primary" href="/#check">Check a video <span>↗</span></a>
+
+          <!-- Quiz block: lesson 06 -->
+          <div class="section-quiz" id="sq-detector" data-section="detector">
+            <div class="sq-header"><span class="sq-eyebrow">CHECK YOUR UNDERSTANDING · LESSON 06</span></div>
+            <div class="sq-question" data-q="0">
+              <p class="sq-qtext">A detector returns a low score for a video. This means:</p>
+              <div class="sq-options">
+                <button data-correct="false">The video is confirmed authentic.</button>
+                <button data-correct="true">No strong manipulation signal was found, but the video cannot be confirmed authentic — a false negative is possible.</button>
+                <button data-correct="false">The video was not analysed at all.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="1">
+              <p class="sq-qtext">What does "provenance" refer to in relation to a media file?</p>
+              <div class="sq-options">
+                <button data-correct="false">The number of views a video has received.</button>
+                <button data-correct="false">The quality and resolution of the recording.</button>
+                <button data-correct="true">Information about where a file came from and how it changed over time.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="2">
+              <p class="sq-qtext">A detector result that flags a video means you should:</p>
+              <div class="sq-options">
+                <button data-correct="true">Check the source and context, and verify through a trusted channel — it is not proof of malicious intent.</button>
+                <button data-correct="false">Report the video to the police immediately as confirmed evidence of a deepfake.</button>
+                <button data-correct="false">Share the result publicly so others can be warned.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-score-row" hidden><span class="sq-score-label">Section score:</span><b class="sq-score-val"></b></div>
+          </div>
+
+          <details class="sources"><summary>Sources and further reading</summary><ul><li><a href="https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content" target="_blank" rel="noreferrer">NIST AI 100-4 (2024)</a> — detection, provenance, and content transparency approaches.</li><li><a href="https://c2pa.org/specifications/specifications/2.2/index.html" target="_blank" rel="noreferrer">C2PA Content Credentials specification</a> — technical standard for recording media provenance.</li></ul></details></section>
+
+        <!-- LESSON 07 -->
+        <section class="lesson-section" id="family" data-lesson="family"><div class="lesson-heading"><span>07 · EVERYDAY AI LITERACY</span><span>4 MIN</span></div><h2>How do we talk about AI?</h2><p class="lesson-summary">These are suggested teaching bands, not fixed stages. Start with the child's questions and build autonomy as they grow.</p><div class="age-guides"><article><span>AGES 5–8</span><h3>Notice and ask</h3><p>"Pictures can be made up, like stories. Let's ask where this came from." Practise checking with a trusted adult before acting on surprising messages.</p></article><article><span>AGES 9–12</span><h3>Check and share carefully</h3><p>Compare a claim with a second trusted source. Talk about consent before posting someone's face or voice, and name two adults they can tell.</p></article><article><span>AGES 13–17</span><h3>Identity, consent, and independence</h3><p>Discuss privacy settings, reputational pressure, impersonation, intimate image threats, and how to seek help while preserving the teen's voice in the plan.</p></article></div><div class="family-tool"><div><div class="eyebrow">THE 60-SECOND FAMILY CHECK-IN</div><h3>Make a small trust loop together</h3><p>Choose a phrase that means "I need help checking something." Agree that asking for help starts with curiosity, not punishment.</p></div><ol><li>Who are two adults you can contact?</li><li>What is one safe way to verify a family emergency?</li><li>What can we do if someone threatens to share something?</li></ol></div><button class="copy-checklist" id="copy-family" type="button">Copy family conversation checklist</button><span class="copy-status" id="family-copy-status" role="status"></span>
+
+          <!-- Quiz block: lesson 07 -->
+          <div class="section-quiz" id="sq-family" data-section="family">
+            <div class="sq-header"><span class="sq-eyebrow">CHECK YOUR UNDERSTANDING · LESSON 07</span></div>
+            <div class="sq-question" data-q="0">
+              <p class="sq-qtext">For children aged 5–8, the most age-appropriate AI conversation starter is:</p>
+              <div class="sq-options">
+                <button data-correct="true">"Pictures can be made up, like stories. Let's ask where this came from."</button>
+                <button data-correct="false">"AI models trained on internet data can be manipulated to produce NSFW outputs."</button>
+                <button data-correct="false">"Just ignore anything that seems weird online."</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="1">
+              <p class="sq-qtext">The 60-second family check-in is designed to:</p>
+              <div class="sq-options">
+                <button data-correct="false">Test how much children know about deepfakes each month.</button>
+                <button data-correct="true">Build a small trust loop where children know who to ask and what to do when something feels off.</button>
+                <button data-correct="false">Replace professional safeguarding advice with a family quiz.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-question" data-q="2">
+              <p class="sq-qtext">When discussing AI with teenagers, which topic is most important to include?</p>
+              <div class="sq-options">
+                <button data-correct="false">How to build your own AI model at home.</button>
+                <button data-correct="false">Why AI is mostly used for entertainment and games.</button>
+                <button data-correct="true">Intimate image threats, impersonation, privacy settings, and how to seek help while respecting their voice in the plan.</button>
+              </div>
+              <p class="sq-feedback" hidden></p>
+            </div>
+            <div class="sq-score-row" hidden><span class="sq-score-label">Section score:</span><b class="sq-score-val"></b></div>
+          </div>
+
+          <details class="sources"><summary>Sources and further reading</summary><ul><li><a href="https://www.unicef.org/innocenti/reports/policy-guidance-ai-children" target="_blank" rel="noreferrer">UNICEF Guidance on AI and Children, version 3 (2025)</a>.</li><li><a href="https://www.unicef.org/india/documents/responsible-ai-children-and-young-people" target="_blank" rel="noreferrer">UNICEF India, Responsible AI for Children and Young People</a>.</li></ul></details></section>
+
+        <!-- CERTIFICATE SECTION -->
+        <section class="cert-section" id="certificate" hidden>
+          <div class="cert-banner">
+            <div class="cert-banner-inner">
+              <div class="eyebrow" style="color:#748e7f">🎓 QUIZ COMPLETE</div>
+              <h2 id="cert-headline">You've earned your KinShield certificate!</h2>
+              <p id="cert-subline">Enter your name below to personalise and download your certificate.</p>
+              <div id="cert-name-row-wrap">
+                <div class="cert-name-row">
+                  <label class="cert-name-label" for="cert-name">Your name</label>
+                  <div class="cert-name-input-wrap">
+                    <input id="cert-name" type="text" class="cert-name-input" placeholder="e.g. Priya Sharma" maxlength="60" autocomplete="name"/>
+                    <button class="cert-download-btn" id="cert-download-btn" type="button">Download certificate <span>↓</span></button>
+                  </div>
+                  <p class="cert-name-hint">Your name stays in this browser and is not sent anywhere.</p>
+                </div>
+              </div>
+              <div class="cert-score-summary" id="cert-score-summary"></div>
+            </div>
+            <div class="cert-preview-wrap" aria-hidden="true">
+              <canvas id="cert-canvas" width="800" height="560"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <section class="source-end"><div><div class="eyebrow">KEEP LEARNING</div><h2>Steady knowledge.<br/><em>Stronger connection.</em></h2><p>These references support the guidance across this centre. Statistics are intentionally omitted from lesson copy because local reports do not measure global prevalence.</p></div><ul><li><a href="https://www.unicef.org/innocenti/reports/policy-guidance-ai-children" target="_blank" rel="noreferrer">UNICEF · Guidance on AI and Children (2025)</a></li><li><a href="https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content" target="_blank" rel="noreferrer">NIST · Synthetic content approaches (2024)</a></li><li><a href="https://www.iwf.org.uk/resources/ai-child-abuse-imagery-parent-guide" target="_blank" rel="noreferrer">IWF · Parent safety guide</a></li><li><a href="https://www.cybercrime.gov.in/" target="_blank" rel="noreferrer">Government of India · Cyber Crime Portal</a></li><li><a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" rel="noreferrer">NCMEC · CyberTipline</a></li><li><a href="https://www.unesco.org/en/articles/deepfakes-and-crisis-knowing" target="_blank" rel="noreferrer">UNESCO · Deepfakes and media literacy</a></li></ul></section>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="/"><span class="brand-mark">✳</span> kinshield</a><p>A calmer way to check. A kinder way to talk.</p><small>Educational information, not emergency or legal advice. In immediate danger, contact your local emergency service.</small></footer><a class="back-top" href="#top" aria-label="Back to top">↑</a>
+</body></html>
