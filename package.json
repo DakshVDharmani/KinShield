@@ -1,0 +1,14 @@
+{
+  "name": "kinshield-video-checker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "form-data": "^4.0.4",
+    "multer": "^2.0.2",
+    "node-fetch": "^3.3.2"
+  }
+}

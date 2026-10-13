@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f7f3" />
+    <meta name="description" content="KinShield checks video for signs of deepfake manipulation and explains what a detector result can mean." />
+    <title>KinShield — Video check</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="KinShield home"><span class="brand-mark">✳</span> kinshield</a>
+      <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#limits">About the result</a><a class="nav-cta" href="#check">Check a video <span>↗</span></a></nav>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A CALMER WAY TO CHECK</div>
+          <h1>Not everything<br />online is <em>as it seems.</em></h1>
+          <p class="hero-lede">Check a video for signs of AI manipulation, then get a clear explanation of what the result can—and cannot—tell you.</p>
+          <a class="button button-primary" href="#check">Check a video <span aria-hidden="true">↓</span></a>
+          <p class="privacy-hint"><span>⌑</span> Your file is sent for analysis and deleted from our server afterward.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-card">
+            <div class="art-topline"><span>A MOMENT WORTH A CLOSER LOOK</span><span>01—03</span></div>
+            <div class="landscape"><div class="landscape-sun"></div><div class="landscape-back"></div><div class="landscape-front"></div><div class="play">▶</div><i class="corner c1"></i><i class="corner c2"></i><i class="corner c3"></i><i class="corner c4"></i></div>
+            <div class="art-footer"><span>VIDEO FRAME</span><span class="line"></span><span>REVIEW WITH CARE</span></div>
+          </div>
+          <div class="art-note"><span class="note-mark">✳</span><span>One detector result<br />is only one piece of the story.</span></div>
+        </div>
+      </section>
+
+      <section class="checker" id="check">
+        <div class="section-title"><div><div class="eyebrow">YOUR VIDEO, ONE STEP AT A TIME</div><h2>Check a video</h2></div><span class="section-index">01 / 01</span></div>
+        <div class="checker-layout">
+          <div class="upload-column">
+            <input id="video-file" type="file" accept="video/mp4,video/quicktime,video/webm,video/x-msvideo,.mp4,.mov,.webm,.avi" hidden />
+            <button class="dropzone" id="dropzone" type="button" aria-describedby="file-types">
+              <span class="upload-icon" aria-hidden="true">↑</span>
+              <strong id="file-title">Drop a video here, or <u>browse files</u></strong>
+              <span id="file-types">MP4, MOV, WebM, or AVI · Up to 100 MB</span>
+            </button>
+            <div class="file-row" id="file-row" hidden><span class="file-chip">▣</span><span id="file-info"></span><button id="remove-file" type="button" aria-label="Remove selected video">×</button></div>
+            <label class="consent-row"><input id="consent" type="checkbox" /><span>I agree to send this video to Sightengine for analysis, and I have permission to share it.</span></label>
+            <button class="button button-primary analyze" id="analyze" type="button" disabled>Analyze video <span aria-hidden="true">↗</span></button>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <p class="progress" id="progress" role="status" hidden><span class="spinner"></span> Sending the video for analysis. This may take a few minutes.</p>
+          </div>
+          <aside class="privacy-card"><div class="privacy-icon">⌑</div><h3>Private by design</h3><p>KinShield sends your chosen video to Sightengine to check sampled frames for deepfake signals. We do not keep a copy after the request is processed.</p><div class="privacy-rule"></div><p class="privacy-warning">Please do not upload intimate or exploitative imagery, especially anything involving a child.</p></aside>
+        </div>
+        <section class="result" id="result" aria-live="polite" hidden></section>
+      </section>
+
+      <section class="how" id="how">
+        <div class="how-intro"><div class="eyebrow">A SECOND LOOK, WITH CONTEXT</div><h2>Useful signals.<br /><em>Human judgment.</em></h2><p>Automated checks can help you decide what to look into next. They cannot tell the whole story.</p></div>
+        <div class="steps"><article><span class="step-no">01</span><div><h3>Choose a video</h3><p>Select a supported video file. It is only sent after you give consent.</p></div></article><article><span class="step-no">02</span><div><h3>Review the signals</h3><p>Sightengine samples frames and returns detector scores for those frames.</p></div></article><article id="limits"><span class="step-no">03</span><div><h3>Verify with care</h3><p>Check the original source and ask someone you trust before sharing a claim.</p></div></article></div>
+      </section>
+    </main>
+    <footer><a class="brand" href="#top"><span class="brand-mark">✳</span> kinshield</a><p>Clearer checks for a more thoughtful internet.</p><small>A detector score is a signal, not proof of authenticity, identity, or intent.</small></footer>
+  </body>
+</html>
