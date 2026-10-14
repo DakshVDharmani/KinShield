@@ -27,7 +27,7 @@
             <a class="button button-primary" href="#check">Check a video <span aria-hidden="true">↓</span></a>
             <a class="button certificate-button" href="#certificate-cta"><span>Get your Kids Safety from Deepfakes certificate</span><span aria-hidden="true">↗</span></a>
           </div>
-          <p class="privacy-hint"><span>⌑</span> Your video is sent to FauxLens only after you consent.</p>
+          <p class="privacy-hint"><span>⌑</span> Your video is sent to an external analysis service only after you consent.</p>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="art-card">
@@ -50,19 +50,19 @@
               <span id="file-types">MP4, MOV, WebM, or MKV · Up to 25 MB</span>
             </button>
             <div class="file-row" id="file-row" hidden><span class="file-chip">▣</span><span id="file-info"></span><button id="remove-file" type="button" aria-label="Remove selected video">×</button></div>
-            <label class="consent-row"><input id="consent" type="checkbox" /><span id="consent-copy">I agree to send this video to FauxLens for analysis, and I have permission to share it.</span></label>
+            <label class="consent-row"><input id="consent" type="checkbox" /><span id="consent-copy">I agree to send this video to an external analysis service, and I have permission to share it.</span></label>
             <button class="button button-primary analyze" id="analyze" type="button" disabled>Analyze video <span aria-hidden="true">↗</span></button>
             <p class="form-error" id="form-error" role="alert" hidden></p>
-            <p class="progress" id="progress" role="status" hidden><span class="spinner"></span> Sending the video to FauxLens. Analysis may take a few minutes.</p>
+            <p class="progress" id="progress" role="status" hidden><span class="spinner"></span> Sending the video for analysis. This may take a few minutes.</p>
           </div>
-          <aside class="privacy-card"><div class="privacy-icon">⌑</div><h3>Before you upload</h3><p>FauxLens receives your video for analysis. It says uploaded files are deleted after analysis. KinShield deletes its temporary copy when the request ends. Free starting credits are limited and do not renew monthly.</p><div class="privacy-rule"></div><p class="privacy-warning">Never upload intimate or exploitative imagery, especially anything involving a child. <a href="https://fauxlens.com/privacy" target="_blank" rel="noreferrer">FauxLens privacy policy ↗</a></p></aside>
+          <aside class="privacy-card"><div class="privacy-icon">⌑</div><h3>Before you upload</h3><p>Your video is processed by an external analysis service. KinShield deletes its temporary copy when the request ends. Our rPPG (remote photoplethysmography) model is in development and is not used in this live video check.</p><div class="privacy-rule"></div><p class="privacy-warning">Never upload intimate or exploitative imagery, especially anything involving a child. </p></aside>
         </div>
         <section class="result" id="result" aria-live="polite" hidden></section>
       </section>
 
       <section class="how" id="how">
         <div class="how-intro"><div class="eyebrow">A SECOND LOOK, WITH CONTEXT</div><h2>Useful signals.<br /><em>Human judgment.</em></h2><p>Automated checks can help you decide what to look into next. They cannot tell the whole story.</p></div>
-        <div class="steps"><article><span class="step-no">01</span><div><h3>Choose a video</h3><p>Select a supported video file. It is only sent after you give consent.</p></div></article><article><span class="step-no">02</span><div><h3>Review the signals</h3><p>FauxLens analyzes the video and returns a verdict with supporting evidence.</p></div></article><article id="limits"><span class="step-no">03</span><div><h3>Verify with care</h3><p>Check the original source and ask someone you trust before sharing a claim.</p></div></article></div>
+        <div class="steps"><article><span class="step-no">01</span><div><h3>Choose a video</h3><p>Select a supported video file. It is only sent after you give consent.</p></div></article><article><span class="step-no">02</span><div><h3>Review the signals</h3><p>The video analysis service returns a verdict with supporting evidence.</p></div></article><article id="limits"><span class="step-no">03</span><div><h3>Verify with care</h3><p>Check the original source and ask someone you trust before sharing a claim.</p></div></article></div>
       </section>
 
       <!-- Certificate CTA Section -->

@@ -75,7 +75,7 @@ analyzeButton.addEventListener("click", async () => {
   if (!selectedFile || !consent.checked || busy()) return;
   analyzeButton.dataset.busy = "true";
   analyzeButton.innerHTML = '<span class="spinner"></span> Checking video…';
-  progress.textContent = "Sending your video to FauxLens for analysis. This can take up to two minutes.";
+  progress.textContent = "Sending your video for analysis. This can take up to two minutes.";
   progress.hidden = false;
   resultBox.hidden = true;
   showError("");
@@ -112,13 +112,13 @@ function showResult(data) {
   resultBox.replaceChildren();
   const heading = element("div", null, "result-head");
   const title = element("div");
-  title.append(element("div", "FAUXLENS VIDEO CHECK", "result-kicker"));
+  title.append(element("div", "KINSHIELD VIDEO CHECK", "result-kicker"));
   const complete = data.status === "complete" && typeof data.verdict === "string";
   title.append(element("h3", complete ? data.verdict : "No clear result returned"));
   heading.append(title);
   resultBox.append(heading);
   if (complete) {
-    resultBox.append(element("p", "This is FauxLens's assessment of the video. It is a signal to review alongside the original source and context."));
+    resultBox.append(element("p", "This external service's assessment is one signal to review alongside the original source and context. KinShield's rPPG model is in development and did not produce this result."));
     if (typeof data.confidence_pct === "number" && Number.isFinite(data.confidence_pct)) {
       const scores = element("div", null, "scores");
       const score = element("div");
@@ -139,7 +139,7 @@ function showResult(data) {
       resultBox.append(section);
     }
     if (data.early_result) resultBox.append(element("p", "One signal settled the provider's verdict early; not every analysis layer ran.", "caveat"));
-    if (data.replayed) resultBox.append(element("p", "Showing the saved result for this request; FauxLens reports that it did not charge again.", "caveat"));
+    if (data.replayed) resultBox.append(element("p", "Showing the saved result for this request; the service reports that it did not charge again.", "caveat"));
     if (data.request_id) resultBox.append(element("p", `Reference: ${data.request_id}`, "caveat"));
   }
   resultBox.append(element("p", "A clean result does not prove authenticity. Video detection can miss manipulation or flag genuine footage, especially after compression or editing. Verify the source before acting.", "caveat"));
